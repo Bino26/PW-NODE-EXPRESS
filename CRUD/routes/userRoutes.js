@@ -12,7 +12,7 @@ const router = express.Router();
 router.get("/", home);
 router.post("/createuser", createUser);
 router.get("/getusers", getUsers);
-router.put("/updateuser", updateUser);
+router.put("/updateuser/:id", updateUser);
 router.delete("/deleteuser/:id", deleteUser);
 router.get("/*", (req, res) => {
   res.send("Route not found ");
