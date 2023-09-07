@@ -11,13 +11,13 @@ In this project,I work in a backend only .
 Clone the project
 
 ```bash
-  git clone https://github.com/Bino26/PW-NODE-EXPRESS
+  git clone <repository-url>
 ```
 
 Go to the project directory
 
 ```bash
-  cd PW-NODE-EXPRESS/CRUD 
+  cd CRUD 
 ```
 
 Install dependencies
