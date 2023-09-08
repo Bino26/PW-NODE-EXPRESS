@@ -3,14 +3,18 @@
 ## Tech Stack
 
 **Client:** React JS, Tailwind CSS
+
 **Server:** Node, Express , MongoDB .
 
 ## API Endpoints
 
-`/signup` : Create a new user account by providing the required information (name, email, password).
-`/signin` : Authenticate a user by providing the username and password.
-`/user` : Get Information about user .
-`/logout` : Logout the currently authenticated user.
+`/signup` : Create a new user account by providing the required information (name, email, password)
+
+`/signin` : Authenticate a user by providing the username and password
+
+`/user` : Get Information about user 
+
+`/logout` : Logout the currently authenticated user
 
 ## Key Features:
 
