@@ -81,3 +81,31 @@ Open a web browser and access the application at `http://localhost:3000`
 Feel free to customize and enhance the project according to your needs and send pull requests.
 
 ## Screenshoots
+
+- `/signup`
+
+  
+    ![SignUp](https://github.com/Bino26/PW-NODE-EXPRESS/assets/81714858/5957350d-8fbe-4ce0-9343-bfc4cff214fb)
+  
+
+
+- `/signin`
+
+  
+     ![SignIn](https://github.com/Bino26/PW-NODE-EXPRESS/assets/81714858/866c2ee6-273d-45e2-93eb-9c9bed2475cd)
+  
+
+- `/user`
+
+  
+
+     ![GetUser](https://github.com/Bino26/PW-NODE-EXPRESS/assets/81714858/250b6a13-a160-453d-a5a1-5225240685d9)
+  
+
+- `/forgot_password`
+
+  
+     ![ForgotPassword](https://github.com/Bino26/PW-NODE-EXPRESS/assets/81714858/7209d6c5-788a-43f2-abca-9bdae53a0de3)
+
+  
+  
