@@ -21,7 +21,7 @@ function Home() {
       const response = await axios({
         method: "get",
         url: URL + "/api/auth/user",
-        withCredentials: true
+        withCredentials: true,
       });
 
       if (response.data.success) {
@@ -40,7 +40,7 @@ function Home() {
       const response = await axios({
         method: "get",
         url: URL + "/api/auth/logout",
-        withCredentials: true
+        withCredentials: true,
       });
       if (response.data.success) {
         navigate("/signin");
