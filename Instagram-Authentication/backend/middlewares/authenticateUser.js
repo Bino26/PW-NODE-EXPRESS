@@ -1,10 +1,10 @@
 const JWT = require("jsonwebtoken");
 const authenticateUser = (req, res, next) => {
-  const token = (req.cookie && req.cookie.token) || null;
+  const token = (req.cookies && req.cookies.token) || null;
   if (!token) {
     return res.status(400).json({
       success: false,
-      message: "Invalid Credentials",
+      message: "Not Authorized",
     });
   }
   try {

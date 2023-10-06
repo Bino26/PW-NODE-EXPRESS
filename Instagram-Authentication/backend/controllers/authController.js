@@ -73,5 +73,54 @@ const logIn = async (req, res) => {
     });
   }
 };
+/******************************************************
+ * @GETUSER
+ * @route /api/auth/getuser
+ * @method GET
+ * @description retrieve user data from mongoDb if user is valid(jwt auth)
+ * @returns User Object
+ ******************************************************/
 
-module.exports = { signUp, logIn };
+const getUser = async (req, res) => {
+  const userId = req.user.id;
+  try {
+    const user = await userModel.findById(userId);
+    return res.status(200).json({
+      success: true,
+      data: user,
+    });
+  } catch (error) {
+    return res.status(400).json({
+      success: false,
+      message: error.message,
+    });
+  }
+};
+/******************************************************
+ * @LOGOUT
+ * @route /api/auth/logout
+ * @method GET
+ * @description Remove the token form  cookie
+ * @returns logout message and cookie without token
+ ******************************************************/
+
+const logOut = (req, res) => {
+  try {
+    const cookiesOptions = {
+      expires: new Date(),
+      httpOnly: true,
+    };
+    res.cookie("token", null, cookiesOptions);
+    return res.status(200).json({
+      success: true,
+      message: "Logged Out",
+    });
+  } catch (error) {
+    return res.status(400).json({
+      success: false,
+      message: error.message,
+    });
+  }
+};
+
+module.exports = { signUp, logIn, getUser, logOut };

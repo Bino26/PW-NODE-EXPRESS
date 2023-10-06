@@ -43,7 +43,7 @@ export default function Login() {
 
   return (
     <form className="container flex" id="login-form" onSubmit={handleSubmit}>
-      <ToastContainer/>
+      <ToastContainer />
       <h1>Instagram Login</h1>
       <div className="input-box flex">
         <label htmlFor="username">Username</label>
