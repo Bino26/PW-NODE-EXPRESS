@@ -10,13 +10,13 @@ const authenticateUser = (req, res, next) => {
   try {
     const payload = JWT.verify(token, process.env.SECRET);
     req.user = { id: payload.id, email: payload.email };
-    next();
   } catch (error) {
     return res.status(400).json({
       success: false,
       message: error.message,
     });
   }
+  next();
 };
 
 module.exports = authenticateUser;
