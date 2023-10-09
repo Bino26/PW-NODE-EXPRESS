@@ -2,6 +2,12 @@
 
 It's authentication clone app of instagram app built with MERN Stack .
 
+## Screenshoots
+
+`/signup`
+`login`
+`/getuser`
+
 ## Tech Stack
 
 - **Client:** React JS , CSS
