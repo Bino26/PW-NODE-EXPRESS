@@ -4,9 +4,18 @@ It's authentication clone app of instagram app built with MERN Stack .
 
 ## Screenshoots
 
-`/signup`
-`login`
-`/getuser`
+- `/signup`
+  
+![:signup](https://github.com/Bino26/PW-NODE-EXPRESS/assets/81714858/9d69b57b-6ce3-4e92-beb2-3ee0050e88b0)
+
+- `/login`
+  
+  ![:login](https://github.com/Bino26/PW-NODE-EXPRESS/assets/81714858/58678035-e32c-42b9-950c-4e26010d4ea1)
+
+- `/getuser`
+  
+![:getuser](https://github.com/Bino26/PW-NODE-EXPRESS/assets/81714858/76d868ed-8507-4769-a8a7-351e9e985d6a)
+  
 
 ## Tech Stack
 
