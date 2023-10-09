@@ -1,6 +1,6 @@
 const JWT = require("jsonwebtoken");
 const authenticateUser = (req, res, next) => {
-  const token = (req.cookies && req.cookies.token) || null;
+  const { token } = req.cookies;
   if (!token) {
     return res.status(400).json({
       success: false,
@@ -9,14 +9,19 @@ const authenticateUser = (req, res, next) => {
   }
   try {
     const payload = JWT.verify(token, process.env.SECRET);
-    req.user = { id: payload.id, email: payload.email };
+    res.status(200).json({
+      id: payload.id,
+      email: payload.email,
+      bio: payload.bio,
+      username: payload.username,
+    });
+    next();
   } catch (error) {
     return res.status(400).json({
       success: false,
       message: error.message,
     });
   }
-  next();
 };
 
 module.exports = authenticateUser;

@@ -4,7 +4,7 @@ It's authentication clone app of instagram app built with MERN Stack .
 
 ## Tech Stack
 
-- **Client:** React JS , Vite JS, CSS
+- **Client:** React JS , CSS
 
 - **Server:** Node, Express , MongoDB .
 
@@ -12,19 +12,14 @@ It's authentication clone app of instagram app built with MERN Stack .
 
 ## API Endpoints
 
-- `GET /check-auth`: Checks if the user is authenticated.
+- `GET /getuser`: Checks if the user is authenticated.
 - `POST /signup`: Handles user signup.
 - `POST /login`: Handles user login.
 - `GET /logout`: Handles user logout.
-- `GET /user`: Retrieves user information.
-- `PUT /user/update`: Updates user profile.
-- `DELETE /user/delete`: Deletes user account.
 
 ## Key Features:
 
 - **User Authentication:** Users can signup, login, and logout from the application.
-- **Profile Management:** Users can update their profile information, including name and email.
-- **Password Management:** Users can change their password and request a password reset if forgotten.
 
 ## Run Locally
 
