@@ -46,7 +46,7 @@ export default function Home() {
       <div className="container flex">
         <div className="profile-img">
           <img
-            src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src="https://source.unsplash.com/random/200x200?sig=1"
             alt="profile-img"
           />
         </div>

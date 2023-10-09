@@ -15,5 +15,3 @@ router.post("/signup", signupDataValidate, signUp);
 router.post("/login", loginDataValidate, logIn);
 router.get("/getuser", authenticateUser, getUser);
 router.get("/logout", logOut);
-
-module.exports = router;

@@ -85,13 +85,7 @@ Install the dependencies :
 Launch the server :
 
 ```bash
-  npm run dev
-```
-
-To run this project, you will need to create an .env file and add the following environment variables to your .env file:
-
-```
-VITE_REACT_APP_API_KEY= backend_url
+  npm run start
 ```
 
 3. Access the app in your web browser:
